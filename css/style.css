@@ -1,0 +1,385 @@
+/* Reset */
+html, body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Yu Gothic", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background: #F7F3EF;
+}
+
+/* 共用容器 */
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* Header 統一樣式 */
+.site-header {
+  background-color: #F5EEE6; /* 柔和法式米膚色，襯托棕金感 */
+  padding: 20px 0;           /* 上下留白 */
+  text-align: center;        /* 標題置中 */
+}
+
+.site-title {
+  color: #6B4E3D;            /* 與 logo 棕金感相近 */
+  font-family: "Playfair Display", serif; /* 優雅字體建議 */
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between; /* 左右分開 */
+  align-items: center;            /* 垂直置中 */
+  padding: 10px 0;
+  background: transparent;        /* 可依設計變更背景 */
+  margin-top: 0;
+}
+.logo {
+  height: 180px;                   /* 控制 logo 高度 */
+  margin-top: 5px;
+}
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  min-height: 90vh;
+}
+
+.hero .page-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 導覽列樣式 */
+.main-nav {
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  gap: 30px;                      /* 導覽列按鈕間距 */
+  list-style: none;
+  margin-top: 5px;
+  padding: 0;
+}
+.main-nav a {
+  color: #fff;                    /* 導覽列文字顏色 */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.main-nav a:hover {
+  color: #1760a0;
+}
+
+/* 首頁背景 */
+#home {
+  background-image: url(../images/main-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  flex: 1;
+}
+.home-content {
+  text-align: center;
+}
+.page-title {
+  font-size: 3rem;
+  font-weight: normal;
+  padding-top: 50px;
+}
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  background: #1760a0;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.button:hover {
+  background: #0090aa;
+}
+
+/* About us banner */
+#about-us {
+  background-image: url(../images/about-us-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 260px;
+  padding-top: 10px;
+  position: relative;
+}
+.about-us-content {
+  text-align: center;
+  margin-top: 10px;
+}
+#about-us .page-title {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* About us 主內容 */
+.about-us-contents {
+  display: flex;
+  justify-content: space-between;
+  background: #fceef2;
+  color: #2c2c2c;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 40px auto;
+  gap: 30px;
+  flex-wrap: nowrap; /* 確保不換行 */
+  align-items: flex-start;
+}
+.about-us-contents article {
+  width: 55%;
+  order: 2;
+}
+.about-us-contents article img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.about-us-contents aside {
+  width: 25%;
+  order: 3;
+  background: #1c355e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid;
+    font-weight: normal;
+}
+.about-us-contents aside p {
+    padding: 15px 20px;
+}
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+    color: #0bd;
+} 
+.about-us-contents .ad {
+  width: 20%;
+  order: 1;
+}
+.about-us-contents .ad img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* MENU 
+-------------------------------- */
+#menu {
+    background-image: url(../images/menu-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    flex: 1;
+}
+.menu-content {
+    text-align: center;
+    text-shadow: 0 5p;
+}
+.menu-content .page-title {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,5,0.8);
+}
+.menu-content p {
+   text-shadow: 0 2px 4px rgba(0,0,5,0.8);
+   font-size: 1.25rem;
+   padding-top: 10px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  /* 三欄 */
+  gap: 20px;  /* 可視情況調整 */
+  padding: 20px;
+}
+.item {
+  text-align: center;
+  background: #b07f72;
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.big-box {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.big-box img {
+    height: 94%;
+    width: 100%;
+    object-fit: cover;
+}
+/* CONTACT
+--------------------------------------- */
+#contact {
+    background-image: url(../images/contact-bg.jpg);
+    min-height: 100vh;
+}
+/* 表單 */
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+/* 商店資料.地圖 */
+＃location {
+     padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+    color: #432;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+    color: #432;
+}
+.location-map {
+    width: 74%;
+}
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* SNS */
+#sns {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title {
+    margin-bottom: 30px;
+    color:#432;
+}
+.sns-box {
+    width: 30%;
+}
+
+/* 頁尾 */
+footer {
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p {
+  color: #fff;
+  font-size: 0.875rem;
+}
+
+/* 響應式 */
+@media screen and (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .logo {
+    height: 50px;
+  }
+  .hero-section {
+    min-height: 40vh;
+  }
+  .about-us-contents {
+    flex-direction: column;
+  }
+  .about-us-contents article,
+  .about-us-contents aside {
+    width: 100%;
+  }
+  .about-us-contents aside {
+    margin-top: 30px;
+  }
+  .big-box {
+      grid-column: auto;
+      grid-row: auto;
+  }
+  .big-box img {
+      height: 100%;
+  } 
+  /* CONTACT */
+  #contact .page-title {
+      margin-top: 40px;
+  }
+  /* 表單 */
+  input[type="text"],
+  input[type="email"],
+  input[type="message"],
+  textarea {
+      max-width: 100%;
+  }
+}
