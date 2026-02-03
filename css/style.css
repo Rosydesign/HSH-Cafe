@@ -203,8 +203,7 @@ body {
     flex: 1;
 }
 .menu-content {
-    text-align: center;
-    text-shadow: 0 5p;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.6);
 }
 .menu-content .page-title {
     font-size: 4rem;
@@ -286,8 +285,8 @@ input[type="submit"] {
     line-height: 1;
 }
 /* 商店資料.地圖 */
-＃location {
-     padding: 4% 0;
+#location {
+  padding: 4% 0;
 }
 #location .wrapper {
     display: flex;
